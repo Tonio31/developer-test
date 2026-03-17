@@ -1,73 +1,110 @@
-# React + TypeScript + Vite
+# PhantomBuster — Frontend Interview Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome! This repository contains the base for your live coding interview. Please read this document carefully before we start.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Setup
 
-## React Compiler
+**Requirements:** Node.js 18+
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app runs at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run Storybook:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run storybook
 ```
+
+---
+
+## Context
+
+You will be building a simplified version of the [PhantomBuster Phantom Store](https://phantombuster.com/phantombuster) — a catalog page listing automation tools called "Phantoms".
+
+The codebase already contains:
+
+- The data (`src/data/phantoms.json`)
+- Some utility components (`InputField`, `TagFilter`, `SortSelect`, `Button`, `PhantomTagIcon`, `PhantomSlotBadge`, `Modal`)
+- The app shell in `App.tsx`
+
+Your job is to wire everything together and build the missing pieces.
+
+---
+
+## Part 1 — Without AI (~45 min)
+
+> No AI tools (Copilot, Cursor, ChatGPT, etc.). Your editor's autocomplete is fine.
+
+### 1 — PhantomCard component
+
+Build the `PhantomCard` component in Storybook **before** integrating it in the app.
+
+Each card should display:
+
+- The phantom's **title**
+- A short **description**
+- The **slot count** (use `PhantomSlotBadge`) — positioned in the top-right corner of the card
+- The phantom's **tags** as icons (use `PhantomTagIcon`) — no text, icons only
+- Two buttons at the bottom: **"Learn More"** and **"Use this Phantom"** (clicking them does nothing for now)
+
+Write the story in `src/components/PhantomCard.stories.tsx`.
+
+### 2 — Display all Phantoms
+
+In `App.tsx`, import the phantom data from `src/data/phantoms.json` and render a `PhantomCard` for each phantom.
+
+The grid should display **3 cards per row** on desktop and **2 cards per row** on smaller screens.
+
+### 3 — Search
+
+Wire up the existing `InputField` component to filter the phantom list **by title and description** as the user types.
+
+### 4 — Sorting
+
+Wire up the existing `SortSelect` component to sort the phantom list.
+
+The sort should support two criteria:
+
+- **Name** (alphabetical)
+- **Slots** (numeric)
+
+Each criterion has 3 states: unsorted → ascending → descending (clicking again resets it).
+
+---
+
+## Part 2 — With AI (~30 min)
+
+> You are free to use any AI tool you want (Copilot, Cursor, Claude, ChatGPT, etc.).
+
+### "Learn More" page
+
+Implement a detail page for the **LinkedIn Profile Scraper** phantom.
+
+- Clicking **"Learn More"** on the LinkedIn Profile Scraper card should navigate to a new route (e.g. `/phantoms/linkedin-profile-scraper`)
+- The page should display meaningful content about this phantom — what it does, its inputs, its outputs, use cases, etc.
+- You will need to **add the relevant content** to `phantoms.json` for this phantom (you can use the public PhantomBuster website as a reference)
+- The "Learn More" button on all other phantom cards can remain a no-op for now
+
+The goal of this exercise is to see how you work **with** AI: how you prompt, how you review and adjust the generated code, and how you make architectural decisions.
+
+---
+
+## Evaluation Criteria
+
+| Area                    | What we look at                                                    |
+| ----------------------- | ------------------------------------------------------------------ |
+| Component design        | Props API, composition, reusability                                |
+| Code quality            | Readability, TypeScript usage, no unnecessary complexity           |
+| Storybook               | Stories reflect real use cases, edge cases covered                 |
+| Part 1 speed & accuracy | How much you get done without assistance                           |
+| Part 2 AI usage         | Quality of prompts, critical review of output, ability to steer AI |
+
+---
+
+Good luck — feel free to ask questions at any point.
