@@ -3,357 +3,462 @@
     "id": "linkedin-profile-scraper",
     "title": "LinkedIn Profile Scraper",
     "description": "Extract data from LinkedIn profiles automatically: name, job title, company, location, and more.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 2,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-search-export",
     "title": "LinkedIn Search Export",
     "description": "Export leads from LinkedIn search results into a spreadsheet with all their profile details.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 2,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-message-sender",
     "title": "LinkedIn Message Sender",
     "description": "Send personalized LinkedIn messages or connection requests automatically at scale.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-company-scraper",
     "title": "LinkedIn Company Scraper",
     "description": "Scrape company pages on LinkedIn to collect employees, company info, headcount, and more.",
     "slots": 10,
-    "tags": ["LinkedIn"]
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-post-likers-collector",
     "title": "LinkedIn Post Likers Collector",
     "description": "Collect the list of people who liked a specific LinkedIn post to build targeted prospect lists.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 2,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-email-finder",
     "title": "LinkedIn Email Finder",
     "description": "Find professional email addresses from LinkedIn profiles to boost your outreach deliverability.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-connections-export",
     "title": "LinkedIn Connections Export",
     "description": "Export all your LinkedIn connections with their details into a structured spreadsheet.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 1,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-post-commenters-collector",
     "title": "LinkedIn Post Commenters Collector",
     "description": "Collect everyone who commented on a LinkedIn post to identify engaged prospects.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 7,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-group-members-export",
     "title": "LinkedIn Group Members Export",
     "description": "Export all members from any LinkedIn group into a list with their profile information.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 8,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-auto-connect",
     "title": "LinkedIn Auto Connect",
     "description": "Automatically send personalized connection requests to a list of LinkedIn profiles.",
     "slots": 10,
-    "tags": ["LinkedIn"]
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-job-listings-scraper",
     "title": "LinkedIn Job Listings Scraper",
     "description": "Scrape job listings from LinkedIn searches to track hiring signals and find warm accounts.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 1,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-followers-collector",
     "title": "LinkedIn Followers Collector",
     "description": "Collect all followers of a LinkedIn company page to build a targeted audience list.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 6,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-event-attendees-export",
     "title": "LinkedIn Event Attendees Export",
     "description": "Export the list of attendees from any LinkedIn event to reach warm leads automatically.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 3,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-skills-endorser",
     "title": "LinkedIn Skills Endorser",
     "description": "Automatically endorse skills of your LinkedIn connections to increase profile visibility.",
-    "slots": 5,
-    "tags": ["LinkedIn"]
+    "slots": 7,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-profile-viewer",
     "title": "LinkedIn Profile Viewer",
     "description": "Automatically visit LinkedIn profiles to trigger notifications and boost your visibility.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "sales-navigator-search-export",
     "title": "Sales Navigator Search Export",
     "description": "Export leads from LinkedIn Sales Navigator searches and get verified emails for each profile.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 4,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "sales-navigator-account-leads",
     "title": "Sales Navigator Account Leads",
     "description": "Automatically extract leads from Sales Navigator account lists to power your outbound campaigns.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 8,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "sales-navigator-list-export",
     "title": "Sales Navigator List Export",
     "description": "Export saved lead and account lists from LinkedIn Sales Navigator into spreadsheets.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 9,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "sales-navigator-company-employees",
     "title": "Sales Navigator Company Employees",
     "description": "Extract all employees from a company on Sales Navigator with their title, seniority, and contact info.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 2,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "sales-navigator-lead-recommender",
     "title": "Sales Navigator Lead Recommender",
     "description": "Scrape Sales Navigator recommended leads based on your saved preferences and filters.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 5,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "google-maps-search-export",
     "title": "Google Maps Search Export",
     "description": "Extract business listings from Google Maps searches including name, phone, address, and website.",
-    "slots": 10,
-    "tags": ["Google"]
+    "slots": 3,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "google-search-to-leads",
     "title": "Google Search to Leads",
     "description": "Turn Google search results into a list of leads with contact information automatically.",
-    "slots": 10,
-    "tags": ["Google"]
+    "slots": 3,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "google-maps-reviews-scraper",
     "title": "Google Maps Reviews Scraper",
     "description": "Extract reviews from Google Maps business listings to monitor reputation or find prospects.",
-    "slots": 10,
-    "tags": ["Google"]
+    "slots": 7,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "google-spreadsheet-import",
     "title": "Google Spreadsheet Import",
     "description": "Import data from a Google Spreadsheet to use as input for any Phantom automation.",
-    "slots": 1,
-    "tags": ["Google"]
+    "slots": 3,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "google-spreadsheet-export",
     "title": "Google Spreadsheet Export",
     "description": "Export any Phantom results directly into a Google Spreadsheet automatically.",
-    "slots": 1,
-    "tags": ["Google"]
+    "slots": 4,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "instagram-profile-scraper",
     "title": "Instagram Profile Scraper",
     "description": "Extract data from public Instagram profiles: bio, follower count, following, and more.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 2,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-hashtag-collector",
     "title": "Instagram Hashtag Collector",
     "description": "Collect posts and their authors from any Instagram hashtag to find relevant influencers and leads.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 6,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-followers-collector",
     "title": "Instagram Followers Collector",
     "description": "Collect the followers list of any public Instagram account for audience analysis and outreach.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 1,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-post-likers-collector",
     "title": "Instagram Post Likers Collector",
     "description": "Collect all users who liked a specific Instagram post to build an engaged audience list.",
     "slots": 10,
-    "tags": ["Instagram"]
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-comments-collector",
     "title": "Instagram Comments Collector",
     "description": "Scrape all comments from an Instagram post along with the usernames who left them.",
     "slots": 10,
-    "tags": ["Instagram"]
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-dm-sender",
     "title": "Instagram DM Sender",
     "description": "Send automated direct messages to a list of Instagram users at scale.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 4,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "instagram-auto-follow",
     "title": "Instagram Auto Follow",
     "description": "Automatically follow a list of Instagram accounts to grow your audience and visibility.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 4,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "hubspot-contacts-export",
     "title": "HubSpot Contacts Export",
     "description": "Export all your HubSpot contacts with their properties into a CSV file for further enrichment.",
-    "slots": 5,
-    "tags": ["HubSpot"]
+    "slots": 6,
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "hubspot-crm-enricher",
     "title": "HubSpot CRM Enricher",
     "description": "Automatically enrich your HubSpot contacts with LinkedIn data and verified email addresses.",
-    "slots": 5,
-    "tags": ["HubSpot"]
+    "slots": 2,
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "hubspot-deals-export",
     "title": "HubSpot Deals Export",
     "description": "Export all your HubSpot deals with their stage, value, and associated contacts into a spreadsheet.",
-    "slots": 5,
-    "tags": ["HubSpot"]
+    "slots": 3,
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "hubspot-companies-export",
     "title": "HubSpot Companies Export",
     "description": "Export all company records from HubSpot with their properties for analysis or enrichment.",
     "slots": 5,
-    "tags": ["HubSpot"]
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "hubspot-contact-importer",
     "title": "HubSpot Contact Importer",
     "description": "Automatically import a list of contacts into HubSpot CRM from any spreadsheet source.",
-    "slots": 5,
-    "tags": ["HubSpot"]
+    "slots": 3,
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "linkedin-sales-navigator-cookie-checker",
     "title": "Sales Navigator Cookie Checker",
     "description": "Verify that your Sales Navigator session cookie is valid and active before running automations.",
-    "slots": 1,
-    "tags": ["Sales Navigator"]
+    "slots": 9,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "linkedin-recruiter-search-export",
     "title": "LinkedIn Recruiter Search Export",
     "description": "Export candidate profiles from LinkedIn Recruiter search results for talent sourcing pipelines.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "linkedin-company-posts-export",
     "title": "LinkedIn Company Posts Export",
     "description": "Export all recent posts from a LinkedIn company page with their engagement metrics.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "instagram-story-viewer",
     "title": "Instagram Story Viewer",
     "description": "Automatically view Instagram stories of a list of accounts to boost profile visits.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 7,
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "google-my-business-scraper",
     "title": "Google My Business Scraper",
     "description": "Scrape business information from Google My Business listings for local lead generation.",
-    "slots": 10,
-    "tags": ["Google"]
+    "slots": 7,
+    "tags": [
+      "Google"
+    ]
   },
   {
     "id": "hubspot-meetings-export",
     "title": "HubSpot Meetings Export",
     "description": "Export all scheduled and past meetings from HubSpot with participants and outcome notes.",
-    "slots": 5,
-    "tags": ["HubSpot"]
+    "slots": 4,
+    "tags": [
+      "HubSpot"
+    ]
   },
   {
     "id": "linkedin-pdf-profile-scraper",
     "title": "LinkedIn PDF Profile Scraper",
     "description": "Download LinkedIn profiles as PDF and extract structured data for your CRM.",
-    "slots": 10,
-    "tags": ["LinkedIn"]
+    "slots": 3,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "sales-navigator-similar-leads",
     "title": "Sales Navigator Similar Leads",
     "description": "Find leads similar to your best customers using Sales Navigator's AI recommendations.",
-    "slots": 10,
-    "tags": ["Sales Navigator"]
+    "slots": 1,
+    "tags": [
+      "Sales Navigator"
+    ]
   },
   {
     "id": "instagram-following-collector",
     "title": "Instagram Following Collector",
     "description": "Collect the list of accounts that a given Instagram profile is following.",
     "slots": 10,
-    "tags": ["Instagram"]
+    "tags": [
+      "Instagram"
+    ]
   },
   {
     "id": "google-sheets-to-linkedin-enricher",
     "title": "Google Sheets to LinkedIn Enricher",
     "description": "Enrich a Google Sheet of names with LinkedIn profile URLs and professional data automatically.",
-    "slots": 10,
-    "tags": ["Google", "LinkedIn"]
+    "slots": 5,
+    "tags": [
+      "Google",
+      "LinkedIn"
+    ]
   },
   {
     "id": "hubspot-linkedin-enricher",
     "title": "HubSpot LinkedIn Enricher",
     "description": "Match your HubSpot contacts to LinkedIn profiles and enrich them with up-to-date professional data.",
-    "slots": 5,
-    "tags": ["HubSpot", "LinkedIn"]
+    "slots": 7,
+    "tags": [
+      "HubSpot",
+      "LinkedIn"
+    ]
   },
   {
     "id": "sales-navigator-hubspot-sync",
     "title": "Sales Navigator to HubSpot Sync",
     "description": "Export leads from Sales Navigator and sync them directly into your HubSpot CRM automatically.",
-    "slots": 10,
-    "tags": ["Sales Navigator", "HubSpot"]
+    "slots": 1,
+    "tags": [
+      "Sales Navigator",
+      "HubSpot"
+    ]
   },
   {
     "id": "linkedin-birthday-wisher",
     "title": "LinkedIn Birthday Wisher",
     "description": "Automatically send birthday messages to your LinkedIn connections on their special day.",
-    "slots": 5,
-    "tags": ["LinkedIn"]
+    "slots": 3,
+    "tags": [
+      "LinkedIn"
+    ]
   },
   {
     "id": "instagram-location-posts-collector",
     "title": "Instagram Location Posts Collector",
     "description": "Collect all Instagram posts tagged at a specific location to find local influencers and leads.",
-    "slots": 10,
-    "tags": ["Instagram"]
+    "slots": 9,
+    "tags": [
+      "Instagram"
+    ]
   }
 ]
