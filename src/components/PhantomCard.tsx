@@ -1,4 +1,6 @@
 import type { Phantom } from '../types'
+import { Button } from './Button'
+import { PhantomSlotBadge } from './PhantomSlotBadge'
 import { PhantomTagIcon } from './PhantomTagIcon'
 
 interface PhantomCardProps {
@@ -14,9 +16,7 @@ export function PhantomCard({ phantom }: PhantomCardProps) {
             <PhantomTagIcon key={tag} tag={tag} />
           ))}
         </div>
-        <span className="shrink-0 rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-700">
-          {phantom.slots} slots
-        </span>
+        <PhantomSlotBadge slots={phantom.slots} />
       </div>
 
       <div className="flex-1">
@@ -25,12 +25,8 @@ export function PhantomCard({ phantom }: PhantomCardProps) {
       </div>
 
       <div className="flex gap-2 pt-1">
-        <button className="flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
-          Learn more
-        </button>
-        <button className="flex-1 rounded-lg bg-blue-600 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 transition-colors">
-          Use now
-        </button>
+        <Button variant="outline">Learn more</Button>
+        <Button variant="primary">Use now</Button>
       </div>
     </div>
   )
