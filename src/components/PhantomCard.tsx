@@ -1,17 +1,5 @@
-import type { Phantom, PhantomTag } from '../types'
-import LinkedInSvg from '../images/svgs/linkedin.svg?react'
-import SalesNavigatorSvg from '../images/svgs/salesNavigator.svg?react'
-import GoogleSvg from '../images/svgs/google.svg?react'
-import InstagramSvg from '../images/svgs/instagram.svg?react'
-import HubSpotSvg from '../images/svgs/hubSpot.svg?react'
-
-const TAG_ICON: Record<PhantomTag, React.ReactNode> = {
-  LinkedIn: <LinkedInSvg className="w-5 h-5" />,
-  'Sales Navigator': <SalesNavigatorSvg className="w-5 h-5" />,
-  Google: <GoogleSvg className="w-5 h-5" />,
-  Instagram: <InstagramSvg className="w-5 h-5" />,
-  HubSpot: <HubSpotSvg className="w-5 h-5" />,
-}
+import type { Phantom } from '../types'
+import { PhantomTagIcon } from './PhantomTagIcon'
 
 interface PhantomCardProps {
   phantom: Phantom
@@ -23,9 +11,7 @@ export function PhantomCard({ phantom }: PhantomCardProps) {
       <div className="flex items-start justify-between gap-2">
         <div className="flex flex-wrap gap-1.5">
           {phantom.tags.map((tag) => (
-            <span key={tag} title={tag}>
-              {TAG_ICON[tag]}
-            </span>
+            <PhantomTagIcon key={tag} tag={tag} />
           ))}
         </div>
         <span className="shrink-0 rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-700">
