@@ -30,7 +30,7 @@ You will be building a simplified version of the [PhantomBuster Phantom Store](h
 The codebase already contains:
 
 - The data (`src/data/phantoms.json`)
-- Some utility components (`InputField`, `TagFilter`, `SortSelect`, `Button`, `PhantomTagIcon`, `PhantomSlotBadge`, `Modal`)
+- Some utility components (`InputField`, `SortSelect`, `Button`, `PhantomTagIcon`, `PhantomSlotBadge`, `Modal`)
 - The app shell in `App.tsx`
 
 Your job is to wire everything together and build the missing pieces.
@@ -76,7 +76,16 @@ The sort should support two criteria:
 
 Each criterion has 3 states: unsorted → ascending → descending (clicking again resets it).
 
----
+### 5 — Welcome modal
+
+The `Modal` component already exists
+
+In `App.tsx`, display the modal when the user first lands on the page. It should show:
+
+- A **"Welcome"** heading
+- A short description welcoming the user on this test
+
+The modal should disappear when the user clicks "Close" or the backdrop.
 
 ## Part 2 — With AI (~30 min)
 
