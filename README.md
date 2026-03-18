@@ -88,8 +88,8 @@ Implement a detail page for the **LinkedIn Profile Scraper** phantom.
 
 - Clicking **"Learn More"** on the LinkedIn Profile Scraper card should navigate to a new route (e.g. `/phantoms/linkedin-profile-scraper`)
 - The page should display meaningful content about this phantom — what it does, its inputs, its outputs, use cases, etc.
-- You will need to **add the relevant content** to `phantoms.json` for this phantom (you can use the public PhantomBuster website as a reference)
-- The "Learn More" button on all other phantom cards can remain a no-op for now
+- You will need to **add the relevant content** to `phantoms.json` for this phantom — use [this page](https://phantombuster.com/automations/linkedin/5589386912058181/linkedin-profile-scraper) as your reference
+- The "Learn More" button on all other phantom cards will show an error state
 
 The goal of this exercise is to see how you work **with** AI: how you prompt, how you review and adjust the generated code, and how you make architectural decisions.
 
